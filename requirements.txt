@@ -1,6 +1,6 @@
 fastapi==0.115.6
 uvicorn==0.34.0
-prophet==1.1.7
+git+https://github.com/facebook/prophet.git
 statsmodels==0.14.4
 scikit-learn==1.7.0
 pandas==2.2.2
