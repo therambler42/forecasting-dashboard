@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from the minimal forecasting dashboard!"}
+    return {"message": "Hello, Render!"}
