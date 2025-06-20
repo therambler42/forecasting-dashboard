@@ -3,9 +3,5 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-async def root():
-    return {"message": "Forecasting dashboard minimal"}
-
-@app.get("/forecast")
-async def forecast():
-    return {"forecast": [1, 2, 3]}
+def read_root():
+    return {"message": "Hello, World!"}
