@@ -1,15 +1,15 @@
-# bootstrap – must stay at the very top
+# requirements.txt ready for Render (Python 3.11 or 3.10)
+# bootstrap – must stay at the very top so pip uses wheels only
 pip>=23.3
 setuptools>=68.2.2
 wheel
 
-# your app deps – all versions with Linux/Py3.11 wheels
+# web framework
 fastapi==0.115.6
 uvicorn==0.30.0
 
+# numeric + ML stack (all have wheels for Linux/Py3.11)
 numpy==1.23.5
 pandas==1.5.3
 scikit-learn==1.4.2
-statsmodels==0.14.4    # optional; remove if you don’t use it
-
-
+statsmodels==0.14.4  # remove if unused
