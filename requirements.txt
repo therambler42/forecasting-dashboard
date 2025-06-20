@@ -2,8 +2,8 @@ fastapi==0.115.6
 uvicorn==0.34.0
 statsmodels==0.14.4
 scikit-learn==1.7.0
-pandas==2.2.2
-numpy==2.2.6
+pandas==1.5.3 
+numpy==1.23.5
 pydantic==2.11.5
 # force rebuild
 
