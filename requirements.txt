@@ -1,9 +1,15 @@
+# bootstrap – must stay at the very top
+pip>=23.3
+setuptools>=68.2.2
+wheel
+
+# your app deps – all versions with Linux/Py3.11 wheels
 fastapi==0.115.6
-uvicorn==0.34.0
-statsmodels==0.14.4
-scikit-learn==1.7.0
-pandas==1.5.3 
+uvicorn==0.30.0
+
 numpy==1.23.5
-pydantic==2.11.5
-# force rebuild
+pandas==1.5.3
+scikit-learn==1.4.2
+statsmodels==0.14.4    # optional; remove if you don’t use it
+
 
