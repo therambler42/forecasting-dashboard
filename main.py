@@ -1,13 +1,11 @@
-
 from fastapi import FastAPI
-from forecasting_service import run_forecast
 
 app = FastAPI()
 
-@app.get("/run")
-def run():
-    return run_forecast()
+@app.get("/")
+async def root():
+    return {"message": "Forecasting dashboard minimal"}
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+@app.get("/forecast")
+async def forecast():
+    return {"forecast": [1, 2, 3]}
